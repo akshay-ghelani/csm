@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import "bootstrap/dist/css/bootstrap.min.css";
 import styles from "../styles/Blog.module.css";
+import Navbar from "@/components/Navbar";
 
 const blogs = [
   {
@@ -26,6 +27,8 @@ const blogs = [
 
 export default function Blog() {
   return (
+    <>
+    <Navbar/>
     <div className="container mt-5" id="blog-section">
       <h1 className="fw-bold text-center mb-4">📖 Blog</h1>
       <div className="row">
@@ -65,5 +68,6 @@ export default function Blog() {
         }
       `}</style>
     </div>
+    </>
   );
 }
